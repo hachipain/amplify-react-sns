@@ -5,12 +5,8 @@ describe("Authenticator:", function () {
 
   describe("Sign In:", () => {
     it("allows a user to signin", () => {
-      cy.get(selectors.usernameInput).type(
-        "<** staging環境に存在するユーザID **>"
-      );
-      cy.get(selectors.signInPasswordInput).type(
-        "<** staging環境に存在するユーザのパスワード **>"
-      );
+      cy.get(selectors.usernameInput).type("testuser");
+      cy.get(selectors.signInPasswordInput).type("testuserpass");
       cy.get(selectors.signInSignInButton).contains("Sign In").click();
       cy.get(selectors.root).contains("Global");
     });

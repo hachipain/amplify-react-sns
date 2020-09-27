@@ -82,7 +82,7 @@
         "Layers": [],
         "Timeout": "25",
         "Code": {
-          "S3Bucket": "amplify-boyaki-production-171124-deployment",
+          "S3Bucket": "amplify-boyaki-staging-220054-deployment",
           "S3Key": "amplify-builds/createPostAndTimeline-6d443144627167383859-build.zip"
         }
       }
